@@ -1,21 +1,22 @@
+// index home
 const siteMetadata = {
-    title: `Elemental`,
+    title: `Webcom`,
     siteUrl: `http://localhost`,
     capitalizeTitleOnHome: false,
-    logo: `/images/logo.png`,
-    icon: `/images/icon.png`,
-    titleImage: `/images/wall.png`,
-    ogImage: `/images/wall.png`,
-    twoColumnWall: true,
+    logo: `/images/logw.png`,
+    icon: `/images/iconw.png`,
+    titleImage: `/images/7.jpg`,
+    ogImage: `/images/7.jpg`,
+    twoColumnWall: false,
     cookiePolicy: true,
-    introTag: `PHOTOGRAPHER | VIDEOGRAPHER`,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
+    introTag: `SITIO WEB || APP MOVILE`,
+    description: `Diseñamos & Desarrollamos Sitios Web & App Móviles. Marcamos la diferencia  interpretando lo que necesitan nuestros clientes para lograr el éxito en su propósito.`,
     about:
-        "Cras accumsan a lectus at tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus elementum dapibus dictum. Mauris auctor quam nec est tincidunt hendrerit. Donec pulvinar lobortis mauris. Cras vulputate ullamcorper ligula a rhoncus. Nunc venenatis elementum ligula in semper. Mauris malesuada purus nunc, et ultricies leo aliquam ac. Ut sit amet nunc id magna accumsan hendrerit in eget metus.",
-    author: `@_akzhy`,
+        "Hola! Somos Webcom Website una Agencia Boutique Interactiva. Desarrollamos Sitios Web, App Movile, Contenido Digital y Promocionamos tus Productos. \nEspecializados y apasionados por lo que hacemos conectamos a las marcas con su audiencia aumentando su visibilidad y consecuente crecimiento exponencial, logramos que su negocio o empresa se diferencie por el elegante, intuitivo y funcional diseño & desarrollo de su presencia onLine, generamos el impacto en el target que se ha marcado como objetivo y todo bajo una metodologia innovadora y eficiente utilizada por las grandes empresas    ( Facebook, Instagram, Linkedin, Twitter & + ) que permiten una mejor experiencia a su cliente, que es nuestra  prioridad.",
+    author: `@andmininbad`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
-    darkmode: true,
+    darkmode: true, 
     switchTheme: true,
     navLinks: [
         {
@@ -23,19 +24,19 @@ const siteMetadata = {
             url: "/",
         },
         {
-            name: "ABOUT",
-            url: "/about",
-        },
-        {
-            name: "BLOG",
-            url: "/blog",
+            name: "SERVICIOS", // cantent/basepage/about
+            url: "/servicios",
         },
         {
             name: "PORTFOLIO",
             url: "/portfolio",
         },
         {
-            name: "CONTACT",
+            name: "BLOG",
+            url: "/blog",
+        },
+        {
+            name: "CONTACTO",
             url: "/contact",
         },
     ],
@@ -45,8 +46,8 @@ const siteMetadata = {
             url: "/privacy-policy",
         },
         {
-            name: "GitHub",
-            url: "https://github.com/akzhy/gatsby-starter-elemental",
+            name: "GITHUB",
+            url: "https://github.com/andminin8",
         },
     ],
     social: [
@@ -63,7 +64,7 @@ const siteMetadata = {
         {
             name: "Instagram",
             icon: "/images/Instagram.svg",
-            url: "#",
+            url: "https://www.instagram.com/webcomwebsite/",
         },
         {
             name: "Youtube",
@@ -74,12 +75,12 @@ const siteMetadata = {
     contact: {
         // leave empty ('') or false to hide form
         api_url: "https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-        mail: "hi@akzhy.com",
-        phone: "000-000-0000",
-        address: "1234 \nLocation \nLocation",
+        description: `GET IN TOUCH WITH US || PÓNGASE EN CONTACTO CON NOSOTROS.`,
+        mail: "webcom.website@gmail.com",
+        phone: "+54 9 11 35150202",
+        address: "1650 \nBuenos Aires \nArgentina",
     },
-    disqus: "elemental-netlify-com",
+    disqus: "Webcom.Website",
 }
 
 const beforeContactFormSubmit = data => {

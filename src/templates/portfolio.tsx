@@ -37,7 +37,7 @@ export default function porfolio ({ location, data }: PageProps<PortfolioQuery, 
                                 <span className="ml-2">
                                     {data.mdx.frontmatter.date}
                                 </span>
-                            </p>
+                            </p> 
                             <p className="mt-3 md:w-3/4 mx-auto">
                                 {data.mdx.frontmatter.description}
                             </p>
@@ -51,7 +51,7 @@ export default function porfolio ({ location, data }: PageProps<PortfolioQuery, 
                 </div>
             </div>
         </Layout>
-    )
+    ) 
 }
 
 export const query = graphql`

@@ -39,14 +39,14 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
                                 4: {
                                     type: "success",
                                     message:
-                                        "Your message has been sent.",
+                                        "Tu mensaje ha sido enviado.",
                                 },
                             })
                         } else {
                             setFeedback({
                                 4: {
                                     message:
-                                        "There was an error sending the message. Please try again.",
+                                        "Hubo un error al enviar el mensaje. Inténtalo de nuevo.",
                                 },
                             })
                         }
@@ -55,7 +55,7 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
                         setFeedback({
                             4: {
                                 message:
-                                    "There was an error sending the message. Please try again.",
+                                    "Hubo un error al enviar el mensaje. Inténtalo de nuevo.",
                             },
                         })
                         setTransactionState(false);
@@ -73,7 +73,7 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
             }}
         >
             <TextInput
-                label="Name"
+                label="Nombre"
                 name="name"
                 onChange={e =>
                     updateData({
@@ -106,7 +106,7 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
                 }
             />
             <TextInput
-                label="Message"
+                label="Mensaje"
                 name="message"
                 type="textarea"
                 onChange={e =>
@@ -131,7 +131,7 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
 
                 <Button
                     type="button,submit"
-                    title="Send"
+                    title="Enviar"
                     disabled={transactionState}
                     iconRight={<IconRight spin={transactionState}/>}
                 />

@@ -4,6 +4,8 @@ import Layout from "../components/layout";
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { BasePagesQuery } from "./__generated__/BasePagesQuery";
+import SocialLinks from "../utils/sociallinks";
+import { Row, Col } from "../components/shortcodes/index"
 
 export default function basePages({ data, location }: PageProps<BasePagesQuery, {}>) {
     return (
@@ -13,19 +15,20 @@ export default function basePages({ data, location }: PageProps<BasePagesQuery, 
             image: data.mdx.frontmatter.image?.publicURL
         }}
         location={location}>
-            <div className="boxed">
-                <div className="title py-12 text-center">
-                    <h2 className="font-black text-5xl text-color-1">{data.mdx.frontmatter.title}</h2>
-                </div>
+            <div className="md:px-4 mt-12 py-6 md:w-11/12 mx-auto">
+                <div className="uptop" ></div>
                 <div className="post-content px-4 lg:px-24 md:px-8 pb-12">
-                    <MDXProvider>
+                    <MDXProvider components={{ Row, Col }}>
                         <MDXRenderer>{data.mdx.body}</MDXRenderer>
-                    </MDXProvider>
+                    </MDXProvider> 
                 </div>
+            </div>
+            <div className="sociallink" >
+            <SocialLinks />
             </div>
         </Layout>
     );
-}
+} 
 
 
 export const query = graphql`

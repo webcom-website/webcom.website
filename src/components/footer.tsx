@@ -28,7 +28,7 @@ export default function() {
         <footer className="footer bg-bgalt py-12">
             <div className="container mx-auto text-center">
                 <div className="flex justify-center my-3 mb-6">
-                    <Link to="/" title={query.site.siteMetadata.title}>
+                    <Link to="#" title={query.site.siteMetadata.title}>
                         <Logo className="w-12"/>
                     </Link>
                 </div>

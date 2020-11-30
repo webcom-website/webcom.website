@@ -12,6 +12,7 @@ import ItemBlog from "../components/item-blog"
 import { Form, Description as ContactDescription } from "../components/contact"
 import { IndexPageQuery } from "./__generated__/IndexPageQuery"
 
+
 export default ({ data, location }: PageProps<IndexPageQuery>) => {
     const siteData = data.site.siteMetadata
 
@@ -39,6 +40,7 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
         >
             <Wall data={siteData} />
             {siteData.about !== "" && <About data={siteData.about} />}
+            <h3 className="text-color-1 font-black text-5xl lg:text-6xl h3Index">Lo que hacemos</h3>
             <div className="px-4 lg:px-0" id="portfolio">
                 {portfolioList}
             </div>
@@ -97,7 +99,7 @@ const Wall = ({ data }) => {
             <p className="text-base lg:text-lg mt-4">{data.description}</p>
             <ScrollIntoView selector="#portfolio">
                 <Button
-                    title="SEE WORKS"
+                    title="Nuestras Obras"
                     type="button"
                     iconRight={<ArrowRight />}
                 />
@@ -113,14 +115,14 @@ const Wall = ({ data }) => {
             >
                 <div className="flex-1 lg:block absolute lg:relative w-full h-full top-0 left-0">
                     <div
-                        className="absolute left-0 top-0 w-full h-full lg:hidden"
+                        className="absolute left-0 top-0 w-full h-full lg:hidden" 
                         style={{
                             background: "rgba(0,0,0,.75)",
                         }}
                     ></div>
                     <img
                         src={data.titleImage}
-                        alt=""
+                        alt="arte abstracto"
                         className="h-full w-auto max-w-none lg:h-auto lg:w-full"
                     />
                 </div>
@@ -146,7 +148,7 @@ const About = ({ data }) => {
         <div className="boxed">
             <div className="px-4 py-20 text-center lg:py-40 lg:px-0">
                 <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
-                    About
+                    Nosotros
                 </h2>
                 <p className="mt-5 text-lg">{data}</p>
             </div>
