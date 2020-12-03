@@ -46,8 +46,8 @@ const siteMetadata = {
             url: "/privacy-policy",
         },
         {
-            name: "GITHUB",
-            url: "https://github.com/andminin8",
+            name: "ATRIBUTOS",
+            url: "/atributos",
         },
     ],
     social: [
@@ -75,7 +75,7 @@ const siteMetadata = {
     contact: {
         // leave empty ('') or false to hide form
         api_url: "https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3",
-        description: `GET IN TOUCH WITH US || PÓNGASE EN CONTACTO CON NOSOTROS.`,
+        description: `PÓNGASE EN CONTACTO CON NOSOTROS || GET IN TOUCH WITH US.`,
         mail: "webcom.website@gmail.com",
         phone: "+54 9 11 35150202",
         address: "1650 \nBuenos Aires \nArgentina",
