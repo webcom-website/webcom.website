@@ -5,21 +5,24 @@ import Layout from "../components/layout"
 import { Form, Description } from "../components/contact"
 import { ContactQuery } from "./__generated__/ContactQuery"
 
+
 export default ({data, location}: PageProps<ContactQuery>) => {
 
     const api_url = data.site.siteMetadata.contact.api_url;
     const hasContactForm = (api_url);
+    const arrow = "../../public/images/r.png";
     return (
         <Layout
-            seo={{
+            seo={{ 
                 title: "Contacto",
             }}
             location={location}
         >
             <div className="container mx-auto py-12">
-                <div className="title py-12 text-center">
-                    <h2 className="font-black text-5xl text-color-1">
-                        Contacto
+                <div className="title py-12 text-center" id="contacto">
+                    <h2 className="font-black text-5xl text-color-1 dd"  >
+                      WEBCOM <br/> en contacto
+                  
                     </h2>
                 </div>
                 <div className="flex flex-wrap pb-40">

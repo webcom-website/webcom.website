@@ -96,6 +96,9 @@ const Wall = ({ data }) => {
             <p className="text-lg lg:text-xl text-color-2 pt-4 lg:pt-0">
                 {data.introTag}
             </p>
+            <div className="it" >
+                <img src="../../public//images/o.png" alt=""/>
+            </div>
             <p className="text-base lg:text-lg mt-4">{data.description}</p>
             <ScrollIntoView selector="#portfolio">
                 <Button
@@ -123,8 +126,9 @@ const Wall = ({ data }) => {
                     <img
                         src={data.titleImage}
                         alt="arte abstracto"
-                        className="h-full w-auto max-w-none lg:h-auto lg:w-full"
+                        className="h-full w-auto max-w-none lg:h-auto lg:w-full imgclass"
                     />
+                    
                 </div>
                 <div className="flex-1 text-center p-3 relative z-10 lg:text-left lg:pl-8 text-white lg:text-color-default">
                     {innerComponents}

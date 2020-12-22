@@ -3,14 +3,15 @@ const siteMetadata = {
     title: `Webcom`,
     siteUrl: `http://localhost`,
     capitalizeTitleOnHome: false,
-    logo: `/images/logw.png`,
+    logo: `/images/pw.png`,
     icon: `/images/iconw.png`,
-    titleImage: `/images/7.jpg`,
-    ogImage: `/images/7.jpg`,
-    twoColumnWall: false,
+    titleImage: `/images/t11.png`,
+    titleImage2: `/images/t11.png`,
+    ogImage: `/images/t11.png`,
+    twoColumnWall: true,
     cookiePolicy: true,
-    introTag: `SITIO WEB || APP MOVILE`,
-    description: `Diseñamos & Desarrollamos Sitios Web & App Móviles. Marcamos la diferencia  interpretando lo que necesitan nuestros clientes para lograr el éxito en su propósito.`,
+    introTag: `DESARROLLO WEB PARA PEQUEÑAS & GRANDES EMPRESAS`,
+    description: `Diseñamos & Desarrollamos Sitios Web & App Móviles. Creamos soluciones para tu entorno virtual ayudando a comunicar y compartir con el mundo tu transformación digital.`,
     about:
         "Hola! Somos Webcom Website una Agencia Boutique Interactiva. Desarrollamos Sitios Web, App Movile, Contenido Digital y Promocionamos tus Productos. \nEspecializados y apasionados por lo que hacemos conectamos a las marcas con su audiencia aumentando su visibilidad y consecuente crecimiento exponencial, logramos que su negocio o empresa se diferencie por el elegante, intuitivo y funcional diseño & desarrollo de su presencia onLine, generamos el impacto en el target que se ha marcado como objetivo y todo bajo una metodologia innovadora y eficiente utilizada por las grandes empresas    ( Facebook, Instagram, Linkedin, Twitter & + ) que permiten una mejor experiencia a su cliente, que es nuestra  prioridad.",
     author: `@andmininbad`,
@@ -24,7 +25,7 @@ const siteMetadata = {
             url: "/",
         },
         {
-            name: "SERVICIOS", // cantent/basepage/about
+            name: "SERVICIOS", // content/basepage/about
             url: "/servicios",
         },
         {
@@ -54,23 +55,19 @@ const siteMetadata = {
         {
             name: "Facebook",
             icon: "/images/Facebook.svg",
-            url: "#",
+            url: "https://www.facebook.com/webcom.website",
         },
         {
             name: "Twitter",
             icon: "/images/Twitter.svg",
-            url: "#",
+            url: "https://twitter.com/webcomwebsite",
         },
         {
             name: "Instagram",
             icon: "/images/Instagram.svg",
             url: "https://www.instagram.com/webcomwebsite/",
         },
-        {
-            name: "Youtube",
-            icon: "/images/Youtube.svg",
-            url: "#",
-        },
+       
     ],
     contact: {
         // leave empty ('') or false to hide form
@@ -94,21 +91,21 @@ const beforeContactFormSubmit = data => {
     if (data.name.trim().length < 2) {
         errors.push({
             code: 1,
-            message: "Enter a name",
+            message: "Ingresa un nombre",
         })
     }
 
     if (!data.email.match(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/)) {
         errors.push({
             code: 2,
-            message: "Enter a valid email address",
+            message: "Introduzca una dirección de correo electrónico válida",
         })
     }
 
     if (data.message.trim().length < 15) {
         errors.push({
             code: 3,
-            message: "Enter a message with atleast 15 characters",
+            message: "Ingrese un mensaje con al menos 15 caracteres",
         })
     }
 

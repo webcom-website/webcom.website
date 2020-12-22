@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { Logo } from "./utils"
 import Navlinks from "./navigation-list"
+import Atributos from "./atributos"
 import { FooterLinksQuery, FooterLinksQuery_site_siteMetadata_footerLinks } from "./__generated__/FooterLinksQuery"
 
 
@@ -47,6 +48,12 @@ export default function() {
                     {new Date().getFullYear()}
                 </p>
             </div>
+            <div className="atri title py-12 text-center">
+                <h3>Atributos & Agradecimientos</h3>
+            <a href="https://www.freepik.es/home" target="_BLANK" > Visita Freepik! </a> <br/>
+            <a href="https://pixabay.com/" target="_BLANK" > Visita Pixabay! </a>
+            </div>
+            <div className="title py-12 text-center" id="foot"></div>
         </footer>
     )
 }

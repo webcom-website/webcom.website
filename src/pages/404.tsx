@@ -8,7 +8,7 @@ export default ({ location }: PageProps<{}, {}>) => {
             seo={{
                 title: "404",
 
-            }}
+            }} 
             location={location}
         >
             <div className="container mx-auto py-12" id="imagebg" >
@@ -28,3 +28,4 @@ export default ({ location }: PageProps<{}, {}>) => {
         </Layout>
     )
 }
+ 

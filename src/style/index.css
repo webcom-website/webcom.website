@@ -10,10 +10,11 @@ p {
     line-height: 165%;
 }
 .theme-dark .text-color-1 {
-    color: #69D2E7;
+    color: #4ecad2;
+    
 }
 .theme-dark .text-primary {
-    color: #f89f18;
+    color: #d564ab;
 }
 .boxed {
     @apply max-w-screen-lg w-full mx-auto;
@@ -22,14 +23,35 @@ p {
 .large-container {
     max-width: 2100px;
 }
+/*
+.text-6xl{
+  
+background: -moz-linear-gradient(left,  #4ecad2 0%, #76b2d9 21%, #9d9be1 41%, #bd82d2 63%, #d564ab 100%); 
+background: -webkit-linear-gradient(left,  #4ecad2 0%,#76b2d9 21%,#9d9be1 41%,#bd82d2 63%,#d564ab 100%); 
+background: linear-gradient(to right,  #4ecad2 0%,#76b2d9 21%,#9d9be1 41%,#bd82d2 63%,#d564ab 100%);
+animation: backgroundtitle 3s infinite linear; 
+}*/
+@keyframes backgroundtitle {
+    100% {
+      background-position-y: 200vh;
+    }
+  }
 .mt-4 {
     width: 65%; /* hace margin right */ 
     margin-bottom: 2%;
 }
+
 .uptop{
     margin-top: -25vh;
 }
+.it {
+    background-image: url('../../public//images/o.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
 
+}
 #imagebg {
     background-image: url('../../contents/basepages/servicios/404.jpg');
     background-position: top;
@@ -99,6 +121,65 @@ p {
     margin-bottom: 1vmin;
     top: 70vmin;
     z-index: 11;
+}
+.dd {
+    margin-top: -15vh;
+    margin-left: 5vw;
+}
+.imgclass {
+    position: relative;
+    top: -5vh;
+
+}
+.serv {
+    text-align: center;
+}
+/* Marcamos la diferencia  interpretando lo que necesitan nuestros clientes para lograr el éxito en su propósito */
+.m {
+    margin-bottom: 5%;
+}
+#abst {
+    background-image: url('../../public/images/98.png');
+ background-position: top;
+ background-repeat: no-repeat;
+background-attachment:initial;
+ background-size: contain;
+ padding-right: 17%;
+ padding-top: 17%;
+ width: 75vw;
+ height: 75vh;
+ position: relative;
+ top: 0vh;
+ left: -85vh;
+ 
+ 
+}
+#contacto {
+ background-image: url('../../public/images/gf.png');
+ background-position: top;
+ background-repeat: no-repeat;
+background-attachment:initial;
+ background-size: contain;
+ padding-right: 17%;
+ padding-top: 22%; 
+
+}
+#foot {
+    background-image: url('../../public/images/21.png');
+ background-position: top;
+ background-repeat: no-repeat;
+background-attachment:initial;
+ background-size: contain;
+ padding-right: 17%;
+ padding-top: 17%;  
+ position: relative;
+ top: 0vh;
+ left: 25%;
+ width: 50%;
+ height: 25%;
+}
+.gatsby-resp-image-image {
+     border: 1px solid #c1c1c1;
 }
 .post-content {
     margin-top: 35vmin;
@@ -177,6 +258,7 @@ p {
 
 .title h1{ 
     @apply text-color-1 font-black;
+    
 }
 
 
@@ -185,7 +267,10 @@ p {
     background: #fff;
     mix-blend-mode: multiply;
 }
-
+#derecha {
+    position: relative;
+    left: 50%;
+}
 .supports-blend .title h1 span {
     position: absolute;
     display: block;
@@ -195,7 +280,28 @@ p {
     bottom: 0;
     @apply bg-gradient-primary;
     mix-blend-mode: screen;
+
+    background: linear-gradient(-45deg, #76b2d9, #4ecad2, #54fde0, #d564ab, #bd82d2, #4f02a6);
+	background-size: 400% 400%;
+    animation: sss 11s ease infinite;
+
 }
+
+
+@keyframes sss
+{
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 
 .theme-dark .supports-blend .title h1 {
     color: #fff;
@@ -243,7 +349,14 @@ p {
 .btn-primary {
     @apply bg-primary my-4;
     color: #fff;
+
+    background: linear-gradient(-45deg, #76b2d9, #4ecad2, #54fde0, #d564ab, #bd82d2, #4f02a6);
+	background-size: 400% 400%;
+    animation: sss 7.9s ease 3s;
+    
+ 
 }
+
 
 .btn-primary:before {
     @apply bg-secondary;
@@ -296,6 +409,7 @@ p {
     transition-property: width;
     @apply absolute bg-gradient-primary duration-300 w-0 left-0 bottom-0;
     height: 2px;
+    
 }
 
 .animated-link-parent a:hover:after,.animated-link-parent a:focus:after,.animated-link-parent a:active:after {
