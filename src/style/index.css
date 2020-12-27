@@ -23,14 +23,7 @@ p {
 .large-container {
     max-width: 2100px;
 }
-/*
-.text-6xl{
-  
-background: -moz-linear-gradient(left,  #4ecad2 0%, #76b2d9 21%, #9d9be1 41%, #bd82d2 63%, #d564ab 100%); 
-background: -webkit-linear-gradient(left,  #4ecad2 0%,#76b2d9 21%,#9d9be1 41%,#bd82d2 63%,#d564ab 100%); 
-background: linear-gradient(to right,  #4ecad2 0%,#76b2d9 21%,#9d9be1 41%,#bd82d2 63%,#d564ab 100%);
-animation: backgroundtitle 3s infinite linear; 
-}*/
+
 @keyframes backgroundtitle {
     100% {
       background-position-y: 200vh;
@@ -44,23 +37,7 @@ animation: backgroundtitle 3s infinite linear;
 .uptop{
     margin-top: -25vh;
 }
-.it {
-    background-image: url('../../public//images/o.png');
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
 
-}
-#imagebg {
-    background-image: url('../../contents/basepages/servicios/404.jpg');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    width: 100%;
-    height: 95vmin;
-}
 .text-7xl {
     position: relative;
     top: 10.333vh;
@@ -119,7 +96,7 @@ animation: backgroundtitle 3s infinite linear;
 .py-12 {
     
     margin-bottom: 1vmin;
-    top: 70vmin;
+    padding-top: -5vh;
     z-index: 11;
 }
 .dd {
@@ -138,46 +115,7 @@ animation: backgroundtitle 3s infinite linear;
 .m {
     margin-bottom: 5%;
 }
-#abst {
-    background-image: url('./images/98.png');
- background-position: top;
- background-repeat: no-repeat;
-background-attachment:initial;
- background-size: contain;
- padding-right: 17%;
- padding-top: 17%;
- width: 75vw;
- height: 75vh;
- position: relative;
- top: 0vh;
- left: -85vh;
- 
- 
-}
-#contacto {
- background-image: url('./images/gf.png');
- background-position: top;
- background-repeat: no-repeat;
-background-attachment:initial;
- background-size: contain;
- padding-right: 17%;
- padding-top: 22%; 
 
-}
-#foot {
-    background-image: url('./images/21.png');
- background-position: top;
- background-repeat: no-repeat;
-background-attachment:initial;
- background-size: contain;
- padding-right: 17%;
- padding-top: 17%;  
- position: relative;
- top: 0vh;
- left: 25%;
- width: 50%;
- height: 25%;
-}
 .gatsby-resp-image-image {
      border: 1px solid #c1c1c1;
 }

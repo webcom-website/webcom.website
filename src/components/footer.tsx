@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { Logo } from "./utils"
 import Navlinks from "./navigation-list"
-import Atributos from "./atributos"
+
 import { FooterLinksQuery, FooterLinksQuery_site_siteMetadata_footerLinks } from "./__generated__/FooterLinksQuery"
 
 
@@ -42,6 +42,7 @@ export default function() {
                     <ul>
                     {footerLinks} 
                     </ul>
+                    
                 </div>
                 <p className="text-color-default text-lg">
                     Copyright &copy; {query.site.siteMetadata.title}{" "}

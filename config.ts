@@ -22,7 +22,7 @@ const siteMetadata = {
     navLinks: [
         {
             name: "HOME",
-            url: "/",
+            url: "#",
         },
         {
             name: "SERVICIOS", // content/basepage/about
@@ -46,10 +46,7 @@ const siteMetadata = {
             name: "PRIVACY POLICY",
             url: "/privacy-policy",
         },
-        {
-            name: "ATRIBUTOS",
-            url: "/atributos",
-        },
+        
     ],
     social: [
         {
@@ -67,6 +64,7 @@ const siteMetadata = {
             icon: "/images/Instagram.svg",
             url: "https://www.instagram.com/webcomwebsite/",
         },
+      
        
     ],
     contact: {
