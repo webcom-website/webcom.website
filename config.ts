@@ -3,8 +3,8 @@ const siteMetadata = {
     title: `Webcom`,
     siteUrl: `http://localhost`,
     capitalizeTitleOnHome: false,
-    logo: `/images/logw.png`,
-    icon: `/images/iconw.png`,
+    logo: `/images/icon.png`,
+    icon: `/images/icon.png`,
     titleImage: `/images/t11.png`,
     titleImage2: `/images/t11.png`,
     ogImage: `/images/t11.png`,
@@ -22,7 +22,7 @@ const siteMetadata = {
     navLinks: [
         {
             name: "HOME",
-            url: "#",
+            url: "/",
         },
         {
             name: "SERVICIOS", // content/basepage/about
