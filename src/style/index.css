@@ -139,7 +139,7 @@ animation: backgroundtitle 3s infinite linear;
     margin-bottom: 5%;
 }
 #abst {
-    background-image: url('../../public/images/98.png');
+    background-image: url('./images/98.png');
  background-position: top;
  background-repeat: no-repeat;
 background-attachment:initial;
@@ -155,7 +155,7 @@ background-attachment:initial;
  
 }
 #contacto {
- background-image: url('../../public/images/gf.png');
+ background-image: url('./images/gf.png');
  background-position: top;
  background-repeat: no-repeat;
 background-attachment:initial;
@@ -165,7 +165,7 @@ background-attachment:initial;
 
 }
 #foot {
-    background-image: url('../../public/images/21.png');
+    background-image: url('./images/21.png');
  background-position: top;
  background-repeat: no-repeat;
 background-attachment:initial;

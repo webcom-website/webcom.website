@@ -3,7 +3,7 @@ const siteMetadata = {
     title: `Webcom`,
     siteUrl: `http://localhost`,
     capitalizeTitleOnHome: false,
-    logo: `/images/pw.png`,
+    logo: `/images/logw.png`,
     icon: `/images/iconw.png`,
     titleImage: `/images/t11.png`,
     titleImage2: `/images/t11.png`,
