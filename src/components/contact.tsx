@@ -25,8 +25,7 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
 
     return (
         <form
-            name="contact"
-            method="post"
+            name={'${pathPrefix}-contact'}
             action="/contact/"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
