@@ -25,7 +25,11 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
 
     return (
         <form
+            name="contact"
+            method="post"
+            action="/contact/"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
             onSubmit={event => {
                 event.preventDefault()
                 setTransactionState(true);
