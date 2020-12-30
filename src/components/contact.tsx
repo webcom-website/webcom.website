@@ -25,10 +25,10 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
 
     return (
         <form
-            name={'${pathPrefix}-contact'}
-            action="/contact/"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            method="post" 
+            netlify-honeypot="bot-field" 
+            data-netlify="true" 
+            name="contact"
             onSubmit={event => {
                 event.preventDefault()
                 setTransactionState(true);
@@ -77,6 +77,7 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
             }}
         >
             
+            <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
             <TextInput
                 label="Nombre"
