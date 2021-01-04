@@ -23,23 +23,7 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
 
     const updateData = v => changeData({ ...data, ...v })
 
-    return (
-        <form className="py-3 lg:p-4" name="contact" method="POST" data-netlify="true">
-          <p>
-            <label>Your Nombre: <input type="text" name="name" /></label>   
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email" /></label>
-          </p>
-         
-          <p>
-            <label>Mensage: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-    )
+    
 }
 
 const Description: React.FC<{ data: ContactQuery_site_siteMetadata_contact }> = ({ data }) => {
