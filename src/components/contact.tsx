@@ -24,7 +24,7 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
     const updateData = v => changeData({ ...data, ...v })
 
     return (
-        <form name="contact" method="POST" data-netlify="true">
+        <form className="py-3 lg:p-4" name="contact" method="POST" data-netlify="true">
           <p>
             <label>Your Nombre: <input type="text" name="name" /></label>   
           </p>
