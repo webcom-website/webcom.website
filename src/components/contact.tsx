@@ -24,125 +24,20 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
     const updateData = v => changeData({ ...data, ...v })
 
     return (
-        <form
-            method="post" 
-            netlify-honeypot="bot-field" 
-            data-netlify="true" 
-            name="contact"
-            onSubmit={event => {
-                event.preventDefault()
-                setTransactionState(true);
-
-                const validate = beforeContactFormSubmit(data);
-
-                if (validate.result) {
-                    setFeedback({});
-                    contactFormSubmit(api, validate.data).then(res => {
-                        if (res.result) {
-                            setFeedback({
-                                4: {
-                                    type: "success",
-                                    message:
-                                        "Tu mensaje ha sido enviado.",
-                                },
-                            })
-                        } else {
-                            setFeedback({
-                                4: {
-                                    message:
-                                        "Hubo un error al enviar el mensaje. Inténtalo de nuevo.",
-                                },
-                            })
-                        }
-                        setTransactionState(false);
-                    }).catch(err => {
-                        setFeedback({
-                            4: {
-                                message:
-                                    "Hubo un error al enviar el mensaje. Inténtalo de nuevo.",
-                            },
-                        })
-                        setTransactionState(false);
-                    })
-                } else {
-                    const errs = {}
-
-                    validate.errors.forEach(err => {
-                        errs[err.code] = { message: err.message }
-                    })
-
-                    setFeedback(errs)
-                    setTransactionState(false);
-                }
-            }}
-        >
-            
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
-            <TextInput
-                label="Nombre"
-                name="name"
-                onChange={e =>
-                    updateData({
-                        name: e.target.value,
-                    })
-                }
-                footer={
-                    <FormMessage
-                        show={feedback[1] !== undefined}
-                        type="error"
-                        message={feedback[1]?.message}
-                    />
-                }
-            />
-            <TextInput
-                label="Email"
-                name="email"
-                type="email"
-                onChange={e =>
-                    updateData({
-                        email: e.target.value,
-                    })
-                }
-                footer={
-                    <FormMessage
-                        show={feedback[2] !== undefined}
-                        type="error"
-                        message={feedback[2]?.message}
-                    />
-                }
-            />
-            <TextInput
-                label="Mensaje"
-                name="message"
-                type="textarea"
-                onChange={e =>
-                    updateData({
-                        message: e.target.value,
-                    })
-                }
-                footer={
-                    <FormMessage
-                        show={feedback[3] !== undefined}
-                        type="error"
-                        message={feedback[3]?.message}
-                    />
-                }
-            />
-            <div className="py-3 lg:p-4">
-                <FormMessage
-                    show={feedback[4] !== undefined}
-                    type={feedback[4]?.type || "error"}
-                    message={feedback[4]?.message}
-                />
-
-                <Button
-                    type="button,submit"
-                    title="Enviar"
-                    disabled={transactionState}
-                    iconRight={<IconRight spin={transactionState}/>}
-                />
-            </div>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Nombre: <input type="text" name="name" /></label>   
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+         
+          <p>
+            <label>Mensage: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
         </form>
     )
 }
